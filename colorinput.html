@@ -1,0 +1,25 @@
+<html>
+	<body>
+
+	<center>
+		<p id="text">This is a sample of your color</p>
+
+		<h1>Type in a valid color name, hex code (#HHHHHH), or rgb(X, y, z) value to change color</h1>
+
+		<input name="Color Picker" type="text" id="colorp"/>
+
+		<button onclick="myFunction()">Change color</button>
+
+		<script>
+			function myFunction() {
+  				var inputVal = document.getElementById("colorp").value;
+  				document.getElementById('text').style.color = inputVal;
+ 				document.getElementById('text').innerHTML = document.getElementById('text').style.color;
+				document.getElementById('change').style.color = inputVal;
+			}
+		</script>
+
+		<h1 id="change">This is the text you are changing the color of</h1>
+
+	</body>
+</html>
